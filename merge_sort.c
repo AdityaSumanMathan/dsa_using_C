@@ -4,6 +4,7 @@ int arr[40];
 void quick_sort(int,int);
 int partition(int,int);
 void swap(int *,int *);
+
 int main() {
 	int size,i;
 	printf("\nEnter size of Array: ");
@@ -26,6 +27,7 @@ int main() {
 	}
 	return 0;
 }
+
 void quick_sort(int low,int high)
 {
 	int pi;
@@ -36,6 +38,7 @@ void quick_sort(int low,int high)
 		quick_sort(pi+1,high);
 	}
 }
+
 int partition(int low,int high)
 {
 	int i,j,pivot;
@@ -53,6 +56,7 @@ int partition(int low,int high)
 	return
 		i+1;
 }
+
 void swap(int *x,int *y)
 {
 	int temp;
